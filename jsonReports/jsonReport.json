@@ -1,0 +1,103 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/knaik/OneDrive - Amadeus Workplace/Desktop/learn-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/knaik/OneDrive - Amadeus Workplace/Desktop/learn-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": null,
+    "configFile": "C:\\Users\\knaik\\OneDrive - Amadeus Workplace\\Desktop\\learn-playwright\\playwright.config.ts",
+    "rootDir": "C:/Users/knaik/OneDrive - Amadeus Workplace/Desktop/learn-playwright",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.27.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\gitActions.spec.ts",
+      "file": "tests/gitActions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "get repo details",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 562,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": ">>REPO DETAILS ARE  async json() {\n    const content = await this.text();\n    return JSON.parse(content);\n  }\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-01-13T06:33:24.402Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "13e64a59db0ce8299a96-5a2f8ad62744abcd76c1",
+          "file": "tests/gitActions.spec.ts",
+          "line": 68,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
